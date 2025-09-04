@@ -3,19 +3,18 @@
 """Jasmine integration for selenium.
 """
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 setup(
     name='gocept.jasmine',
-    version='0.7.dev0',
+    version='0.7+py3.3',
 
     install_requires=[
         'fanstatic >= 1.0',
         'gocept.selenium>=2.0.0b4',
         'jasmine-core',
         'plone.testing',
-        'setuptools',
     ],
 
     extras_require={
@@ -53,9 +52,6 @@ Programming Language :: Python :: 2 :: Only
         'CHANGES.rst',
     )),
 
-    namespace_packages=['gocept'],
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
 )
