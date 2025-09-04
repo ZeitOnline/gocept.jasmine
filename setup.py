@@ -46,11 +46,6 @@ Programming Language :: Python :: 2.7
 Programming Language :: Python :: 2 :: Only
 """[:-1].split('\n'),
     description=__doc__.strip(),
-    long_description='\n\n'.join(open(name).read() for name in (
-        'README.rst',
-        'HACKING.rst',
-        'CHANGES.rst',
-    )),
 
     include_package_data=True,
     zip_safe=False,
